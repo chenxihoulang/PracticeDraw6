@@ -19,5 +19,12 @@
         android:layout_margin="8dp"
         android:textSize="16sp"
         android:text="@string/animate"/>
-
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:text="取消"/>
 </com.hencoder.hencoderpracticedraw6.practice.practice08.Practice08ObjectAnimatorLayout>

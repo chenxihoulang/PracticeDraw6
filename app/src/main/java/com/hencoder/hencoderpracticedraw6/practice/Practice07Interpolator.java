@@ -86,12 +86,24 @@ public class Practice07Interpolator extends LinearLayout {
                         .translationX(Utils.dpToPixel(150))
                         .setDuration(600)
                         .setInterpolator(interpolators[spinner.getSelectedItemPosition()])
+                        .withStartAction(new Runnable() {
+                            @Override
+                            public void run() {
+                                imageView.post(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        imageView.setImageAlpha(100);
+                                    }
+                                });
+                            }
+                        })
                         .withEndAction(new Runnable() {
                             @Override
                             public void run() {
                                 imageView.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
+                                        imageView.setImageAlpha(255);
                                         imageView.setTranslationX(0);
                                     }
                                 }, 500);

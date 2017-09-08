@@ -20,4 +20,6 @@
         android:textSize="16sp"
         android:text="@string/animate"/>
 
+
+
 </com.hencoder.hencoderpracticedraw6.sample.sample08.Sample08ObjectAnimatorLayout>
